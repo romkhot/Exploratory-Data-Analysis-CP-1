@@ -1,6 +1,6 @@
 
 #1. Set working directory:
-setwd(dir = "D:/DOCs/COURSERA/4 - Exploratory Data Analysis/Course Project 1/Exploratory-Data-Analysis-CP-1")
+setwd(dir = "your_path/Exploratory-Data-Analysis-CP-1")
 
 #2. Read dataset with filtering by Date:
 power_data <- subset(read.csv( "./data/household_power_consumption.txt", header=TRUE, sep=';', na.strings="?", 
