@@ -1,6 +1,6 @@
 
 #1. Set working directory:
-setwd(dir = "D:/DOCs/COURSERA/4 - Exploratory Data Analysis/Course Project 1/Exploratory-Data-Analysis-CP-1")
+setwd(dir = "your_path/Exploratory-Data-Analysis-CP-1")
 
 #2. Read dataset with filtering by Date:
 power_data <- subset( read.csv("./data/household_power_consumption.txt", header=TRUE, sep=';', na.strings="?", 
@@ -12,7 +12,7 @@ power_data$Global_active_power <- as.numeric(power_data$Global_active_power)
 
 #4. Plot 1 - a histogram:
 hist(power_data$Global_active_power, main="Global Active Power", 
-     xlab="Global Active Power, kW", ylab="Frequency", col="Red")
+     xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 
 #5. Save histogram to file and close PNG device:
 dev.copy(png, file="plot1.png", height=480, width=480)
