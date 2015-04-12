@@ -1,6 +1,6 @@
 
 #1. Set working directory:
-setwd(dir = "D:/DOCs/COURSERA/4 - Exploratory Data Analysis/Course Project 1/Exploratory-Data-Analysis-CP-1")
+setwd(dir = "your_path/Course Project 1/Exploratory-Data-Analysis-CP-1")
 
 #2. Read dataset with filtering by Date:
 power_data <- subset( read.csv("./data/household_power_consumption.txt", header=TRUE, sep=';', na.strings="?", 
@@ -14,7 +14,7 @@ power_data$Global_active_power <- as.numeric(power_data$Global_active_power)
 
 #4. Plot 2 - a line chart:
 plot(power_data$Date_Time, power_data$Global_active_power, type="l",
-     ylab="Global Active Power, kW", xlab="")
+     ylab="Global Active Power (kilowatts)", xlab="")
 
 #5. Save chart to file and close PNG device:
 dev.copy(png, file="plot2.png", height=480, width=480)
